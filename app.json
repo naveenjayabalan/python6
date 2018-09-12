@@ -8,7 +8,7 @@
   ],
   "repository": "https://github.com/naveensaravanan/python6",
   "scripts": {
-    "postdeploy": "python -c"
+    "postdeploy": "python -c 'from app import db; db.create_all()'"
   },
   "addons": [
     "heroku-postgresql"
